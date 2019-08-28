@@ -49,6 +49,7 @@ func Setup(config *config.Config) error {
 	// Open our database connection
 	db, err = gorm.Open(config.DBName, config.DBPath)
 	if err != nil {
+		log.Info("gorm.Open " + config.DBName " " + config.DBPath)
 		return err
 	}
 	db.LogMode(false)
