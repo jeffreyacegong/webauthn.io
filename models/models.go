@@ -11,10 +11,10 @@ import (
 
 	"github.com/duo-labs/webauthn.io/config"
 	log "github.com/duo-labs/webauthn.io/logger"
-
-	_ "github.com/go-sql-driver/mysql" // Blank import needed to import mysql
 	"github.com/jinzhu/gorm"
-	_ "github.com/mattn/go-sqlite3" // Blank import needed to import sqlite3
+	_ "github.com/lib/pq"              // Blank import needed to import postgres
+	_ "github.com/go-sql-driver/mysql" // Blank import needed to import mysql
+	_ "github.com/mattn/go-sqlite3"    // Blank import needed to import sqlite3
 )
 
 var db *gorm.DB

@@ -1,7 +1,8 @@
 {
-    "db_name": "sqlite3",
-    "db_path": "webauthn.db",
-    "host_address": "127.0.0.1",
-    "host_port": "9005",
-    "relying_party": "localhost"
+    "db_name": "postgres",
+    "db_path": "postgresql://heimdall@kiev.gong.com:26257/authn?ssl=true&sslmode=require&sslrootcert=/etc/cockroach/certs/ca.crt&sslkey=/etc/cockroach/certs/client.heimdall.key&sslcert=/etc/cockroach/certs/client.heimdall.crt",
+    "host_address": "paris.gong.com",
+    "host_port": "80",
+    "relying_party": "gong.com",
+    "log_file": "/tmp/webauthn.log"
 }
